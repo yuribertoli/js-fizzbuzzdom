@@ -1,8 +1,9 @@
+let playingNumbers = parseInt(prompt("Quanti numeri vuoi visualizzare?"));
 let containerDom = document.getElementById("container");
 let number; 
 
-for (let number=1; number<=100; number++) {
-    if ((number % 5 == 0) && (number % 3 == 0)) {
+for (let number=1; number<=playingNumbers; number++) {
+    if (number % 5 == 0 && number % 3 == 0) {
         containerDom.innerHTML = containerDom.innerHTML + "<div class='box box35'>" + "fizzbuzz" + "</div>";
     }
     else if (number % 3 == 0) {
