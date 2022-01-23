@@ -17,16 +17,18 @@ h1 {
     font-size: 3rem;
 }
 
-.container {
+#container {
     width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 
 .box {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     background-color: #1389b2;
     display: flex;
     justify-content: center;
