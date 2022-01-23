@@ -27,8 +27,8 @@ h1 {
 }
 
 .box {
-    width: 65px;
-    height: 65px;
+    width: 75px;
+    height: 75px;
     background-color: #1389b2;
     display: flex;
     justify-content: center;
