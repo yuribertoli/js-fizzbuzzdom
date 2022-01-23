@@ -3,13 +3,8 @@ let containerDom = document.getElementById("container");
 let number; 
 
 for (let number=1; number<=playingNumbers; number++) {
-    if (number % 18 == 0 && number % 7 == 0) {
-        containerDom.innerHTML = containerDom.innerHTML + "<div class='box boxaaa'>" + "aaaaa" + "</div>";
-    }
-    else if (number % 10 == 0 && number % 4 == 0) {
-        containerDom.innerHTML = containerDom.innerHTML + "<div class='box boxboh'>" + "bohhh" + "</div>";
-    }
-    else if (number % 5 == 0 && number % 3 == 0) {
+
+    if (number % 5 == 0 && number % 3 == 0) {
         containerDom.innerHTML = containerDom.innerHTML + "<div class='box box35'>" + "fizzbuzz" + "</div>";
     }
     else if (number % 3 == 0) {
@@ -21,7 +16,13 @@ for (let number=1; number<=playingNumbers; number++) {
     else {
         containerDom.innerHTML = containerDom.innerHTML + "<div class='box'>" + number + "</div>";
     }
+
 }
 
+let count35 = containerDom.getElementsByClassName('box35').length;
+let count3 = containerDom.getElementsByClassName('box3').length;
+let count5 = containerDom.getElementsByClassName('box5').length;
+
+document.getElementById("daje").innerHTML = `Ci sono ${count3} Fizz, ${count5} Buzz e ${count35} FizzBuzz!!`;
 
 

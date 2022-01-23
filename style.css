@@ -9,12 +9,16 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
-h1 {
+h1, #daje {
     color: white;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 3rem;
+}
+
+body #daje {
+    font-size: 1.5rem;
 }
 
 #container {
@@ -46,12 +50,4 @@ h1 {
 
 .box.box5 {
     background-color: #ffd166;
-}
-
-.box.boxboh {
-    background-color: yellowgreen;
-}
-
-.box.boxaaa {
-    background-color: purple;
 }
